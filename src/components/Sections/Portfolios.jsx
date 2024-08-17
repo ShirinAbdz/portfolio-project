@@ -8,15 +8,15 @@ const filters = [
   },
   {
     id: 2,
-    name: "Branding",
+    name: "Next.js",
   },
   {
     id: 3,
-    name: "Creative",
+    name: "React.js",
   },
   {
     id: 4,
-    name: "Design",
+    name: "Redux",
   },
   {
     id: 5,
@@ -27,8 +27,8 @@ const filters = [
 const allData = [
   {
     id: 1,
-    name: "Creative Art",
-    category: ["creative"],
+    name: "Crypto Chain",
+    category: ["React.js"],
     image: "images/portfolio/1.jpg",
     slug: "creative-art",
   },
@@ -60,34 +60,34 @@ const allData = [
     image: "images/portfolio/5.jpg",
     slug: "iphone-8",
   },
-  {
-    id: 6,
-    name: "Minimal Art",
-    category: ["design", "creative"],
-    image: "images/portfolio/6.jpg",
-    slug: "minimal-art",
-  },
-  {
-    id: 7,
-    name: "Creative Art",
-    category: ["creative"],
-    image: "images/portfolio/1.jpg",
-    slug: "creative-art",
-  },
-  {
-    id: 8,
-    name: "Apple USB",
-    category: ["creative", "design"],
-    image: "images/portfolio/2.jpg",
-    slug: "apple-usb",
-  },
-  {
-    id: 9,
-    name: "Work Space",
-    category: ["branding"],
-    image: "images/portfolio/3.jpg",
-    slug: "work-space",
-  },
+  // {
+  //   id: 6,
+  //   name: "Minimal Art",
+  //   category: ["design", "creative"],
+  //   image: "images/portfolio/6.jpg",
+  //   slug: "minimal-art",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Creative Art",
+  //   category: ["creative"],
+  //   image: "images/portfolio/1.jpg",
+  //   slug: "creative-art",
+  // },
+  // {
+  //   id: 8,
+  //   name: "Apple USB",
+  //   category: ["creative", "design"],
+  //   image: "images/portfolio/2.jpg",
+  //   slug: "apple-usb",
+  // },
+  // {
+  //   id: 9,
+  //   name: "Work Space",
+  //   category: ["branding"],
+  //   image: "images/portfolio/3.jpg",
+  //   slug: "work-space",
+  // },
 ];
 
 function Portfolios() {

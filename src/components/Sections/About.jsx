@@ -25,13 +25,13 @@ function About() {
             <p className="mb-2">
               Name: <span className="text-dark">{aboutData.name}</span>
             </p>
-            <p className="mb-2">
-              Location: <span className="text-dark">{aboutData.location}</span>
+            <p className="mb-0">
+              Degree: <span className="text-dark">{aboutData.degree}</span>
             </p>
           </div>
           <div className="col-md-6 mt-2 mt-md-0 mt-sm-2">
-            <p className="mb-0">
-              Degree: <span className="text-dark">{aboutData.birthday}</span>
+            <p className="mb-2">
+              Location: <span className="text-dark">{aboutData.location}</span>
             </p>
             <p className="mb-0">
               Email: <span className="text-dark">{aboutData.email}</span>
