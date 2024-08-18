@@ -20,6 +20,6 @@ function Services() {
       </section>
     </Layout2>
   );
-}
+} 
 
 export default Services;
