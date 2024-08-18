@@ -89,6 +89,7 @@ function Homepage() {
         </section>
       </Element>
 
+
       <Element name="section-contact">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Get in touch" />
