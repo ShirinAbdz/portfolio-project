@@ -37,7 +37,7 @@ function Homepage() {
           <SectionHeading title="My skills" />
           <Skills />
         </section>
-      </Element>
+      </Element> 
 
       {/* <Element name="section-funfacts">
         <Funfacts />
