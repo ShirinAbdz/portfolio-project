@@ -15,7 +15,7 @@ function Services() {
         <ServicesSection />
       </section>
       <section className="shadow-blue white-bg padding">
-        <SectionHeading title="Pricing table" />
+        <SectionHeading title="Pricing table" /> 
         <PricingTable />
       </section>
     </Layout2>
