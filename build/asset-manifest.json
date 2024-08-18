@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7adcd09d.css",
+    "main.js": "/static/js/main.f34df011.js",
+    "static/js/31.9eb6a3d8.chunk.js": "/static/js/31.9eb6a3d8.chunk.js",
+    "static/js/279.8b6daffc.chunk.js": "/static/js/279.8b6daffc.chunk.js",
+    "static/js/377.b351b628.chunk.js": "/static/js/377.b351b628.chunk.js",
+    "static/js/855.6862102a.chunk.js": "/static/js/855.6862102a.chunk.js",
+    "static/js/459.b5151ad4.chunk.js": "/static/js/459.b5151ad4.chunk.js",
+    "static/js/83.278b03ec.chunk.js": "/static/js/83.278b03ec.chunk.js",
+    "static/js/94.1053f028.chunk.js": "/static/js/94.1053f028.chunk.js",
+    "static/js/999.45c15812.chunk.js": "/static/js/999.45c15812.chunk.js",
+    "static/js/920.cd429a43.chunk.js": "/static/js/920.cd429a43.chunk.js",
+    "static/js/453.8b72b3e7.chunk.js": "/static/js/453.8b72b3e7.chunk.js",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/how-to-become-better-with-ui-design.md": "/static/media/how-to-become-better-with-ui-design.cb9cebf5eef6a2607c19.md",
+    "static/media/the-ugly-truth-about-design.md": "/static/media/the-ugly-truth-about-design.a6c056dee77182ce5a0b.md",
+    "static/media/the-truth-about-design.md": "/static/media/the-truth-about-design.2f0caa6bb7e2d9e7888d.md",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/creative-bulb.md": "/static/media/creative-bulb.aaa1dcb4178d95736d30.md",
+    "static/media/creative-art.md": "/static/media/creative-art.2eb87d90ab3d567e2d54.md",
+    "static/media/minimal-art.md": "/static/media/minimal-art.b31598825aefb733878a.md",
+    "static/media/work-space.md": "/static/media/work-space.7348c19231bcb48e0837.md",
+    "static/media/apple-usb.md": "/static/media/apple-usb.488abf75e06a1fe60250.md",
+    "static/media/iphone-8.md": "/static/media/iphone-8.ed29cc1cc0f098f253ac.md",
+    "index.html": "/index.html",
+    "main.7adcd09d.css.map": "/static/css/main.7adcd09d.css.map",
+    "main.f34df011.js.map": "/static/js/main.f34df011.js.map",
+    "453.8b72b3e7.chunk.js.map": "/static/js/453.8b72b3e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7adcd09d.css",
+    "static/js/main.f34df011.js"
+  ]
+}

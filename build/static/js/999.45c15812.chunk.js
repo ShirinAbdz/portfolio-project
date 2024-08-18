@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbako=self.webpackChunkbako||[]).push([[999],{1999:(a,e,s)=>{a.exports=s.p+"static/media/minimal-art.b31598825aefb733878a.md"}}]);

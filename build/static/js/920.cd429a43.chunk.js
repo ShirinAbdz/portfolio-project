@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbako=self.webpackChunkbako||[]).push([[920],{5920:(e,s,a)=>{e.exports=a.p+"static/media/work-space.7348c19231bcb48e0837.md"}}]);
