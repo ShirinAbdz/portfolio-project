@@ -82,12 +82,12 @@ function Homepage() {
         <Clients />
       </Element> */}
 
-      <Element name="section-blogs">
+      {/* <Element name="section-blogs">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Recent posts" />
           <Blogs />
         </section>
-      </Element>
+      </Element> */}
 
 
       <Element name="section-contact">

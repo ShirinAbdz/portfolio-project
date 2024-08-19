@@ -11,7 +11,7 @@ import {
 import { SiGmail } from "react-icons/si";
 
 const headerData = {
-  name: "Shirin Abdollahzadeh",
+  name: "Shirin",
   designation: "ّFrontend Developer",
   imageThumb: "/images/logo.png",
   social: {
@@ -169,7 +169,7 @@ function Header({ toggleHeader, toggleHandler }) {
                   </Link>
                 )}
               </li>
-              <li>
+              {/* <li>
                 {currentPath === "/" ? (
                   <ScrollLink
                     activeClass="active"
@@ -186,7 +186,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-pencil"></i>Blog
                   </Link>
                 )}
-              </li>
+              </li> */}
               <li>
                 {currentPath === "/" ? (
                   <ScrollLink
@@ -240,9 +240,7 @@ function Header({ toggleHeader, toggleHandler }) {
               )}
             </ul>
 
-            <span className="copyright">
-              &copy; {new Date().getFullYear()} Bako Template
-            </span>
+            
           </div>
         </div>
       </header>
