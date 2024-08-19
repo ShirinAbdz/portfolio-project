@@ -244,13 +244,14 @@
       background: $colororange;
       border-radius: 50%;
       display: block;
-      height: 30px;
-      line-height: 28px;
+      height: 40px;
+      line-height: 34px;
       text-align: center;
-      width: 30px;
+      width: 40px;
       &:hover {
         color: $colororange;
         background: #fff;
+   
       }
     }
   }

@@ -8,7 +8,7 @@ const aboutData = {
   location: "Tehran, Iran",
   degree: "Bachelor's of Software Engineering",
   email: "shiringohariii@gmail.com",
-  aboutMe: "This about is also gonna be filled!",
+  aboutMe: "Hi there! I’m Shirin Abdollahzadeh, a Frontend Developer with a Bachelor’s degree in Software Engineering. I love diving into complex problems and finding efficient solutions. If you have any questions or want to discuss something tech-related, feel free to reach out.",
 };
 
 function About() {
