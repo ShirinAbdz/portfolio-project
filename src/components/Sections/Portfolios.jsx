@@ -8,15 +8,15 @@ const filters = [
   },
   {
     id: 2,
-    name: "Next.js",
+    name: "Finance",
   },
   {
     id: 3,
-    name: "React.js",
+    name: "Dashboard",
   },
   {
     id: 4,
-    name: "Redux",
+    name: "Mini-project",
   },
   {
     id: 5,
@@ -28,20 +28,20 @@ const allData = [
   {
     id: 1,
     name: "Crypto Chain",
-    category: ["React.js"],
+    category: ["Finance"],
     image: "images/portfolio/1.jpg",
     slug: "creative-art",
   },
   {
     id: 2,
-    name: "Apple USB",
+    name: "Twitter Clone",
     category: ["creative", "design"],
     image: "images/portfolio/2.jpg",
     slug: "apple-usb",
   },
   {
     id: 3,
-    name: "Work Space",
+    name: "Calculator",
     category: ["branding"],
     image: "images/portfolio/3.jpg",
     slug: "work-space",
