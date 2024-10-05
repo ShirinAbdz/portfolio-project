@@ -133,7 +133,7 @@ function Header({ toggleHeader, toggleHandler }) {
                   </Link>
                 )}
               </li> */}
-              {/* <li>
+              <li>
                 {currentPath === "/" ? (
                   <ScrollLink
                     activeClass="active"
@@ -150,7 +150,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-graduation"></i>Resume
                   </Link>
                 )}
-              </li> */}
+              </li>
               <li>
                 {currentPath === "/" ? (
                   <ScrollLink

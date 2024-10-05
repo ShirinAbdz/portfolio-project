@@ -47,12 +47,12 @@ function Homepage() {
         </section>
       </Element> */}
 
-      {/* <Element name="section-experiences">
+      <Element name="section-experiences">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Experience" />
           <Experiences />
         </section>
-      </Element> */}
+      </Element>
 
       <Element name="section-portfolios">
         <section className="shadow-blue white-bg padding">
