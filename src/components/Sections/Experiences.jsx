@@ -4,25 +4,23 @@ import Experience from "../Items/Experience";
 const experiencesData = [
   {
     id: 1,
-    year: "2019 - Present",
-    degree: "Academic Degree",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
+    year: "ُSept 2019 - Jun 2023",
+    degree: "Bachelor’s Degree",
+    content: "I studied Sftware Engineering in Guilan University.",
   },
   {
     id: 2,
-    year: "2018 - 2015",
-    degree: "Bachelor’s Degree",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
+    year: "Jun 2024 - present",
+    degree: "Varexe",
+    content: "Varexe is a Canadian company which provides accounting services.",
   },
-  {
-    id: 3,
-    year: "2015 - 2012",
-    degree: "Honours Degree",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
-  },
+  // {
+  //   id: 3,
+  //   year: "2015 - 2012",
+  //   degree: "Honours Degree",
+  //   content:
+  //     "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
+  // },
 ];
 
 function Experiences() {
