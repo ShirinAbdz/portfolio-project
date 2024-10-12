@@ -2,7 +2,7 @@ $fontstack: 'Poppins', sans-serif;
 $fontbody: 'Open Sans', sans-serif;
 $colordefault: #000;
 $colorblue: #14181c;
-$colororange: #aa5fff;
+$colorpurple: #aa5fff;
 
 @mixin transition($second) {
   -webkit-transition: all $second ease-in-out;

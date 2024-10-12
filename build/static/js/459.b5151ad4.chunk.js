@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbako=self.webpackChunkbako||[]).push([[459],{6459:(e,a,s)=>{e.exports=s.p+"static/media/creative-art.2eb87d90ab3d567e2d54.md"}}]);

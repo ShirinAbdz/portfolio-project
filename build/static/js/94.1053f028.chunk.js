@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbako=self.webpackChunkbako||[]).push([[94],{8094:(c,e,a)=>{c.exports=a.p+"static/media/iphone-8.ed29cc1cc0f098f253ac.md"}}]);

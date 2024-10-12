@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbako=self.webpackChunkbako||[]).push([[31],{31:(e,t,b)=>{e.exports=b.p+"static/media/how-to-become-better-with-ui-design.cb9cebf5eef6a2607c19.md"}}]);

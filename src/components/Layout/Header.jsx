@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { Link, useRouteMatch } from "react-router-dom";
+
 import {
-  FaLinkedin,
-  FaTwitter,
   FaGithub,
-  FaGmail,
-  FaDribbble,
+  FaLinkedin,
+  FaTwitter
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
@@ -24,7 +23,7 @@ const headerData = {
 
 function Header({ toggleHeader, toggleHandler }) {
   const [currentPath, setCurrentPath] = useState("");
-  const match = useRouteMatch();
+  const match = useLocation();
 
   useEffect(() => {
     setCurrentPath(match.path);
@@ -115,6 +114,7 @@ function Header({ toggleHeader, toggleHandler }) {
                   </Link>
                 )}
               </li>
+
               {/* <li>
                 {currentPath === "/" ? (
                   <ScrollLink
@@ -213,7 +213,7 @@ function Header({ toggleHeader, toggleHandler }) {
               {!headerData.social.linkedin ? null : (
                 <li className="list-inline-item">
                   <a href={headerData.social.linkedin} target="_blank">
-                    <FaLinkedin /> 
+                    <FaLinkedin />
                   </a>
                 </li>
               )}
@@ -239,8 +239,6 @@ function Header({ toggleHeader, toggleHandler }) {
                 </li>
               )}
             </ul>
-
-            
           </div>
         </div>
       </header>

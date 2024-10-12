@@ -133,7 +133,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  background: $colororange;
+  background: $colorpurple;
   opacity: 1;
   height: 7px;
   width: 7px;
@@ -151,7 +151,7 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
   opacity: 1;
-  background: $colororange;
+  background: $colorpurple;
 }
 
 .padding-slider {
