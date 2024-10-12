@@ -58,7 +58,7 @@ header {
       border: 0;
       -webkit-appearance: none;
       opacity: 1;
-      color: $colororange;
+      color: $colorpurple;
       font-weight: 400;
       font-size: 16px;
       border-radius: 50%;
@@ -85,7 +85,7 @@ header {
     &.dot {
       &:after {
         content: "";
-        background-color: $colororange;
+        background-color: $colorpurple;
         border-radius: 50%;
         display: inline-block;
         margin-left: 5px;
@@ -121,7 +121,7 @@ header {
         &.active {
           &:before {
             content: "";
-            background: $colororange;
+            background: $colorpurple;
             display: block;
             height: 18px;
             left: -30px;
@@ -169,7 +169,7 @@ header {
     &.dot {
       &:after {
         content: "";
-        background-color: $colororange;
+        background-color: $colorpurple;
         border-radius: 50%;
         display: inline-block;
         margin-left: 5px;

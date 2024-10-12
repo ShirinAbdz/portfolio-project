@@ -87,7 +87,7 @@ a {
   outline: 0;
   @include transition(0.3s);
   &:hover {
-    color: $colororange;
+    color: $colorpurple;
     text-decoration: none;
   }
   &:focus {
@@ -124,12 +124,12 @@ pre {
 
 ::selection {
   color: #fff;
-  background: $colororange;
+  background: $colorpurple;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: $colororange;
+  background: $colorpurple;
 }
 
 .z-1 {

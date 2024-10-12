@@ -28,7 +28,7 @@
 
 .btn-default {
   color: #fff;
-  background: $colororange;
+  background: $colorpurple;
 
   &:not([href]):not([tabindex]) {
     color: #fff;
@@ -62,7 +62,7 @@
 
   &:hover {
     color: #fff;
-    background: $colororange;
+    background: $colorpurple;
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);

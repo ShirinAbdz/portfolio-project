@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 const herosectionData = {
   name: "Shirin Abdollahzadeh",
   aboutMe:
-    "I was born as an artist. Walking through this life, I tried learning diffferent skills just to know who I am! Now I'm here! A frontend developer with a background of an artist! She loves Badminton, Painting and cars!",
+    "I was born as an artist. Walking through this life, I tried learning different skills just to know who I am! Now I'm here! A frontend developer with a background of an artist! She loves Badminton, Painting and cars!",
 };
 
 function Herosection() {
@@ -41,9 +41,14 @@ function Herosection() {
           smooth={true}
           duration={500}
           offset={50}
-          className="btn btn-border-light btn-lg"
+          className=""
         >
-          <i className="icon-envelope"></i>Hire me
+          <a
+            href="mailto:shiringohariii@gmail.com"
+            className="btn btn-default btn-lg  "
+          >
+            <i className="icon-envelope"></i>Hire me
+          </a>
         </ScrollLink>
       </div>
       <div className="overlay"></div>

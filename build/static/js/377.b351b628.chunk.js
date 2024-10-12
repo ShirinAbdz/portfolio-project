@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbako=self.webpackChunkbako||[]).push([[377],{1377:(e,a,t)=>{e.exports=t.p+"static/media/the-ugly-truth-about-design.a6c056dee77182ce5a0b.md"}}]);
