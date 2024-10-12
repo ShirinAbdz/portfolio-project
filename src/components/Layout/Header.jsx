@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { scroller } from "react-scroll"; // Import scroller
 
 import {
   FaGithub,
@@ -23,11 +24,20 @@ const headerData = {
 
 function Header({ toggleHeader, toggleHandler }) {
   const [currentPath, setCurrentPath] = useState("");
-  const match = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    setCurrentPath(match.path);
-  }, [match]);
+    setCurrentPath(location.pathname);
+
+    // Scroll to the specific section if provided in the state
+    if (location.state && location.state.scrollTo) {
+      scroller.scrollTo(location.state.scrollTo, {
+        smooth: true,
+        offset: -50,
+        duration: 500,
+      });
+    }
+  }, [location]);
 
   return (
     <>
@@ -91,7 +101,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-home"></i>Home
                   </ScrollLink>
                 ) : (
-                  <Link to="/">
+                  <Link to={{ pathname: "/", state: { scrollTo: "section-home" } }}>
                     <i className="icon-home"></i>Home
                   </Link>
                 )}
@@ -109,30 +119,11 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-user"></i>About
                   </ScrollLink>
                 ) : (
-                  <Link to="/">
+                  <Link to={{ pathname: "/", state: { scrollTo: "section-about" } }}>
                     <i className="icon-user"></i>About
                   </Link>
                 )}
               </li>
-
-              {/* <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-services"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-bulb"></i>Services
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-bulb"></i>Services
-                  </Link>
-                )}
-              </li> */}
               <li>
                 {currentPath === "/" ? (
                   <ScrollLink
@@ -146,7 +137,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-graduation"></i>Resume
                   </ScrollLink>
                 ) : (
-                  <Link to="/">
+                  <Link to={{ pathname: "/", state: { scrollTo: "section-experiences" } }}>
                     <i className="icon-graduation"></i>Resume
                   </Link>
                 )}
@@ -164,76 +155,40 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-grid"></i>Works
                   </ScrollLink>
                 ) : (
-                  <Link to="/">
+                  <Link to={{ pathname: "/", state: { scrollTo: "section-portfolios" } }}>
                     <i className="icon-grid"></i>Works
                   </Link>
                 )}
               </li>
-              {/* <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-blogs"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-pencil"></i>Blog
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-pencil"></i>Blog
-                  </Link>
-                )}
-              </li> */}
-              {/* <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-phone"></i>Contact
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-phone"></i>Contact
-                  </Link>
-                )}
-              </li> */}
             </ul>
           </nav>
 
           <div className="footer mt-auto">
             <ul className="social-icons list-inline">
-              {!headerData.social.linkedin ? null : (
+              {headerData.social.linkedin && (
                 <li className="list-inline-item">
-                  <a href={headerData.social.linkedin} target="_blank">
+                  <a href={headerData.social.linkedin} target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
                   </a>
                 </li>
               )}
-              {!headerData.social.twitter ? null : (
+              {headerData.social.twitter && (
                 <li className="list-inline-item">
-                  <a href={headerData.social.twitter} target="_blank">
+                  <a href={headerData.social.twitter} target="_blank" rel="noopener noreferrer">
                     <FaTwitter />
                   </a>
                 </li>
               )}
-              {!headerData.social.github ? null : (
+              {headerData.social.github && (
                 <li className="list-inline-item">
-                  <a href={headerData.social.github} target="_blank">
+                  <a href={headerData.social.github} target="_blank" rel="noopener noreferrer">
                     <FaGithub />
                   </a>
                 </li>
               )}
-              {!headerData.social.gmail ? null : (
+              {headerData.social.gmail && (
                 <li className="list-inline-item">
-                  <a href={headerData.social.gmail} target="_blank">
+                  <a href={headerData.social.gmail} target="_blank" rel="noopener noreferrer">
                     <SiGmail />
                   </a>
                 </li>
