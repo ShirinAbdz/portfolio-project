@@ -1,15 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import "./App.scss";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Multipage from "./pages/Multipage";
-import Bloglist from "./pages/Bloglist";
-import Bloglist2 from "./pages/Bloglist2";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BlogDetails from "./pages/BlogDetails";
 import BlogDetails2 from "./pages/BlogDetails2";
+import Bloglist from "./pages/Bloglist";
+import Bloglist2 from "./pages/Bloglist2";
+import Homepage from "./pages/Homepage";
+import Multipage from "./pages/Multipage";
 
 function App() {
   return (

@@ -12,16 +12,16 @@ const filters = [
   },
   {
     id: 3,
-    name: "Dashboard",
+    name: "Clone",
   },
   {
     id: 4,
     name: "Mini-project",
   },
-  {
-    id: 5,
-    name: "Art",
-  },
+  // {
+  //   id: 5,
+  //   name: "Art",
+  // },
 ];
 
 const allData = [
@@ -30,36 +30,40 @@ const allData = [
     name: "Crypto Chain",
     category: ["Finance"],
     image: "images/portfolio/1.jpg",
-    slug: "creative-art",
+    path:"https://crypto-chain-one.vercel.app/"
+    // slug: "",
   },
   {
     id: 2,
     name: "Twitter Clone",
-    category: ["creative", "design"],
+    category: ["Clone"],
     image: "images/portfolio/2.jpg",
-    slug: "apple-usb",
+    path:"https://twitter-clone-nextjs-mu.vercel.app/"
+    // slug: "apple-usb",
   },
   {
     id: 3,
     name: "Calculator",
-    category: ["branding"],
+    category: ["Mini-project"],
     image: "images/portfolio/3.jpg",
-    slug: "work-space",
+    path:"https://num-master.vercel.app/"
+    // slug: "work-space",
   },
   {
     id: 4,
-    name: "Creative Bulb",
-    category: ["creative"],
+    name: "Contact App",
+    category: ["Mini-project"],
     image: "images/portfolio/4.jpg",
-    slug: "creative-bulb",
+    path:"https://contact-app-two-wheat.vercel.app/"
+    // slug: "creative-bulb",
   },
-  {
-    id: 5,
-    name: "Iphone 8",
-    category: ["branding", "art"],
-    image: "images/portfolio/5.jpg",
-    slug: "iphone-8",
-  },
+  // {
+  //   id: 5,
+  //   name: "Iphone 8",
+  //   category: ["branding", "art"],
+  //   image: "images/portfolio/5.jpg",
+  //   slug: "iphone-8",
+  // },
   // {
   //   id: 6,
   //   name: "Minimal Art",
@@ -104,23 +108,30 @@ function Portfolios() {
   }, [getAllItems]);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     e.preventDefault();
     let targetFilter = e.target.value
       ? e.target.value.toLowerCase()
       : e.target.textContent.toLowerCase();
     setActiveFilter(targetFilter);
     let tempData;
+
     if (targetFilter === filters[0].name.toLowerCase()) {
+      // Show all items up to dataVisibleCount
       tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);
     } else {
+      // Filter based on active category
       tempData = getAllItems.filter((data) => {
+        // Check if the category array includes the target filter (case insensitive)
         return (
-          data.category.includes(targetFilter) && data.id <= dataVisibleCount
+          data.category.some(
+            (category) => category.toLowerCase() === targetFilter
+          ) && data.id <= dataVisibleCount
         );
       });
     }
-    setVisibleItems(tempData);
+
+    setVisibleItems(tempData); // Update visible items
   };
 
   const handleLoadmore = (e) => {
@@ -181,7 +192,7 @@ function Portfolios() {
         ))}
       </div>
 
-      {noMorePost ? null : (
+      {/* {noMorePost ? null : (
         <div className="load-more text-center mt-4">
           <a
             href="#!"
@@ -191,7 +202,7 @@ function Portfolios() {
             <i className="fas fa-circle-notch"></i> Load more
           </a>
         </div>
-      )}
+      )} */}
     </>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-function Portfolio({ portfolio: { id, name, category, image, slug } }) {
+function Portfolio({ portfolio: { path, id, name, category, image, slug } }) {
   return (
-    <a href={`works/${id}/${slug}`}>
+    <a href={path} target="_blank" rel="noreferrer">
       <div className="portfolio-item">
         <div className="details">
           <h4 className="title">{name}</h4>
